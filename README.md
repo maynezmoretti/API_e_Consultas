@@ -26,11 +26,11 @@ A tabela utilizada é:
 ```sql
 CREATE TABLE pecas (
     id SERIAL PRIMARY KEY,
-    nome VARCHAR(100),
-    categoria VARCHAR(100),
-    fornecedor VARCHAR(100),
-    quantidade INTEGER,
-    preco_unitario DECIMAL(10,2)
+    nome VARCHAR(100) NOT NULL,
+    categoria VARCHAR(100) NOT NULL,
+    fornecedor VARCHAR(100) NOT NULL,
+    quantidade INTEGER NOT NULL,
+    preco_unitario DECIMAL(10,2) NOT NULL
 );
 ```
 
